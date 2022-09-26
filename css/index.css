@@ -1,0 +1,205 @@
+body,
+p,
+div,
+a {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+    min-width: 1200px;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 48px;
+    z-index: 9;
+    background-color: black;
+
+}
+
+.headercontent {
+    width: 1200px;
+    height: 48px;
+    margin: auto;
+}
+
+.headercontent img {
+    float: left;
+    margin-top: 10px;
+}
+
+.nav {
+    float: right;
+    height: 48px;
+    line-height: 48px;
+}
+
+.nav a {
+    color: #a4a4a4;
+    margin-left: 40px;
+
+}
+
+.section {
+    font-size: 100px;
+    color: #fff;
+}
+
+.section1 {
+    color: pink;
+    background-image: url(../image/section1_bg.jpg);
+    background-position: center;
+}
+
+.title-box {
+    width: 100%;
+    top: 150px;
+    position: absolute;
+}
+
+.title-box p {
+    font-size: 60px;
+    text-align: center;
+    color: white;
+    margin-bottom: 25px;
+}
+
+.title-box a {
+    display: block;
+    width: 300px;
+    height: 60px;
+    background-image: url(../image/links.png);
+    margin: auto;
+}
+
+.title-box a:hover {
+    /* background-position: X坐标 Y坐标;*/
+    background-position: -300px 0;
+}
+
+.ball1 {
+    position: absolute;
+    top: 22.7%;
+    left: 20%;
+    width: 13.2%;
+    animation: ball 5s linear infinite alternate;
+}
+
+.ball2 {
+    position: absolute;
+    top: 49.8%;
+    left: 65.16%;
+    width: 22.3%;
+    animation: ball 7s linear infinite alternate;
+}
+
+@keyframes ball {
+    form {
+        margin-top: 0;
+    }
+
+    to {
+        margin-top: -25px;
+    }
+}
+
+.ship {
+    position: absolute;
+    top: 40.18%;
+    left: 63.96%;
+    width: 7.2%;
+    animation: ship 30s linear infinite alternate;
+}
+
+@keyframes ship {
+    form {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(-45deg);
+    }
+}
+
+.section video {
+    width: 100%;
+    height: 100%;
+}
+
+.word-content {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 18%;
+    /*background-color: pink;*/
+    transform: translateY(-50%);
+}
+
+.bigword {
+    font-size: 60px;
+
+}
+
+.midword {
+    font-size: 36px;
+}
+
+.smallword {
+    font-size: 16px;
+    margin-top: 12px;
+}
+
+.section {
+    color: white;
+}
+
+.line {
+    width: 28px;
+    height: 3px;
+    background-color: #5e5e5e;
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+}
+
+.word-content a {
+    display: block;
+    width: 200px;
+    height: 48px;
+    margin-top: 50px;
+    background-image: url(../image/link2.png);
+}
+
+.word-content a:hover {
+    background-position: -200px 0;
+}
+
+.footer {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 120px;
+    background-color: #131415;
+    text-align: center;
+    padding-top: 38px;
+    color: #4a4a4a;
+    font-size: 10px;
+    line-height: 22px;
+    font-size: 12px;
+
+}
+
+.footer img {
+    vertical-align: middle;
+}
+
+#fp-nav ul li a.active span {
+    background: rgba(255, 255, 255, .8);
+}
